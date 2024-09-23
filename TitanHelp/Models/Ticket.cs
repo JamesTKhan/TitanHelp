@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TitanHelp.Domain
+namespace TitanHelp.Models
 {
     public class Ticket
     {
