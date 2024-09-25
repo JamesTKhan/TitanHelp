@@ -15,6 +15,13 @@ namespace TitanHelp.Pages
         public void OnGet()
         {
         }
+
+        protected void save_Click(object sender, EventArgs e)
+        {
+            // Later this function will need to read 3? (2 if date is automatic) fields from the UI to create a new ticket object
+            
+
+        }
     }
 
 }
