@@ -14,6 +14,12 @@ namespace TitanHelp.Data
         void SaveTicket(Ticket ticket);
         
         /// <summary>
+        /// Deletes a ticket from the database
+        /// </summary>
+        /// <param name="ticketId"></param>
+        void DeleteTicket(int ticketId);
+        
+        /// <summary>
         /// Gets a ticket from the database. Returns null if not found.
         /// </summary>
         /// <param name="ticketId"></param>

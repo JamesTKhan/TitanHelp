@@ -17,6 +17,13 @@ namespace TitanHelp.Data
             _tickets.Add(ticket);
         }
 
+        public void DeleteTicket(int ticketId)
+        {
+            var ticket = GetTicket(ticketId);
+            if (ticket == null) return;
+            _tickets.Remove(ticket);
+        }
+
         public Ticket? GetTicket(int ticketId)
         {
             return _tickets.FirstOrDefault(t => t.Id == ticketId);
