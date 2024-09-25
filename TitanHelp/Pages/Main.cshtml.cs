@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TitanHelp.Data;
 
 namespace TitanHelp.Pages
 {
@@ -14,7 +15,15 @@ namespace TitanHelp.Pages
 
         public void OnGet()
         {
+
         }
+
+        public void displayTickets() 
+        {
+            // This function will be for displaying the tickets currently in the stub database
+
+        }
+
     }
 
 }
