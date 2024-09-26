@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TitanHelp.Data;
 using TitanHelp.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TitanHelp.Pages
 {
@@ -24,10 +26,14 @@ namespace TitanHelp.Pages
         {
             // Later this function will need to read 3? (2 if date is automatic) fields from the UI to create a new ticket object
 
+            string Name = Request.Form["name"];
+            string Date = Request.Form["date"];
+            string Desc = Request.Form["description"];
+
             var ticket = new Ticket
             {
-                ClientName = "James",
-                Description = "This is a test ticket"
+                ClientName = Name,
+                Description = Desc
             };
 
             _ticketDb.SaveTicket(ticket);
