@@ -6,3 +6,39 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Main page for displaying submitted forms.</p>
+
+<p>
+    <a asp-page="Forms">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tickets[0].ClientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tickets[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tickets[0].Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Tickets)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClientName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

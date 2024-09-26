@@ -10,7 +10,7 @@ namespace TitanHelp.Pages
         private readonly ILogger<FormsModel> _logger;
         private readonly ITicketDb _ticketDb;
 
-        public FormsModel(ILogger<FormsModel> logger, ITicketDb ticketDb)
+        public FormsModel(ILogger<FormsModel> logger, TicketDb ticketDb)
         {
             _logger = logger;
             _ticketDb = ticketDb;   
