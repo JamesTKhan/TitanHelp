@@ -5,4 +5,67 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>This page is for creating new forms.</p>
+<html>
+
+<head>
+    <title>Add Products</title>
+    <style type="text/css">
+        label {
+            float: left;
+            width: 8em;
+            text-align: right;
+            margin-right: 0.5em;
+        }
+
+        textarea {
+            width: 32em;
+        }
+
+        fieldset {
+            padding: 1em;
+            border: 1px solid;
+            width: 50em;
+        }
+
+        legend {
+            padding: 2px 4px;
+            border: 1px solid;
+            font-weight: bold;
+        }
+
+        .validation-summary-errors {
+            font-weight: bold;
+            color: red;
+            font-size: 11pt;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Submit New Ticket</h1>
+
+
+    <form method="post">
+        <fieldset>
+            <div>
+                <label for="name"> Name: </label>
+                <input type="text" id="name" name="name" style="width:10em;" />
+            </div>
+            <div>
+                <label for="date"> Date: </label>
+                <input type="date" id="date" name="date" style="width:10em;" />
+            </div>
+            <div>
+                <label for="description"> Description: </label>
+                <textarea type="text" id="description" name="description" rows="6"></textarea>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" id="save" value="Save" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
