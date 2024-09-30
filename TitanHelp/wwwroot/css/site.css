@@ -25,3 +25,101 @@ button {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+label {
+    float: left;
+    width: 8em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+textarea {
+    width: 32em;
+}
+
+fieldset {
+    padding: 1em;
+    border: 1px solid;
+    width: 50em;
+}
+
+legend {
+    padding: 2px 4px;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: red;
+    font-size: 11pt;
+}
+
+.navbar {
+    background-color: #042c50 !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-item {
+    padding: 0px 4px 0px 4px
+}
+
+nav {
+    border-bottom: 8px solid #d99739
+}
+
+fieldset {
+    padding: 0px 0px 0px 0px;
+    border-style: none;
+    display: inline-block;
+    width: 80vmin;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+input {
+    width: 40vmin;
+}
+
+textarea { 
+    width: 60%;
+}
+
+.main-bg {
+    background: url('../Resources/spc_stockimage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30em;
+    border: 8px solid #d99739;
+    padding: 5% 0px 5% 0px;
+    text-align: center;
+}
+
+.main-content-right {
+    background-color: #0f426f;
+    color: white;
+    display: inline-block;
+    width: 50%;
+    border: 8px solid #d99739;
+    padding: 5px 5px 5px 5px;
+    vertical-align: middle;
+}
+
+.main-content-left {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    vertical-align: middle;
+}

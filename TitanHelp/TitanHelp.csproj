@@ -18,4 +18,9 @@
     <None Remove="Data\titan_help.db" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Resources\titanhelp_inline.png" />
+    <None Include="wwwroot\Resources\titanhelp_stacked.png" />
+  </ItemGroup>
+
 </Project>
